@@ -1,0 +1,5 @@
+MATH        2       13.0
+SPORTS      1.5     14.5
+MUSIC       3       10
+SCIENCE     2.5     15.2
+ENGLISH     2       16
