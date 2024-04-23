@@ -10,10 +10,17 @@ Add a text file like:
 
 Or just modify `example.txt`.
 
-How to compile:
+How to:
 ```bash
-01_compute_grades % mkdir build && cd build
-build % cmake ..
-build % make
+# compile
+01_compute_grades % cmake -S . -B build
+01_compute_grades % cmake --build build
+
+# execute
+01_compute_grades % cd build
 build % ./compute_grades /path/to/[file or example].txt
+
+# tests
+01_compute_grades % cd build
+build % ctest
 ```
