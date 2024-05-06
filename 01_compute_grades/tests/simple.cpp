@@ -1,13 +1,16 @@
 #include <gtest/gtest.h>
 
+#include "../src/line.hpp"
+
 // Demonstrate some basic assertions.
 TEST(HelloTest, BasicAssertions)
 {
-    // Expect two strings not to be equal.
-    EXPECT_STRNE("hello", "world");
-    // Expect equality.
-    EXPECT_EQ(7 * 6, 42);
+    EXPECT_STRNE("hello", "world"); // Expect two strings not to be equal.
+    EXPECT_EQ(7 * 6, 42); // Expect equality.
 }
 
-
-// todo
+TEST(LineTest, Constructor)
+{
+    Line l("soccer", 2, 17.2);
+    ASSERT_EQ(l.getGrades(), 17.2);
+}
