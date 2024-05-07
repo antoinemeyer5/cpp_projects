@@ -1,5 +1,7 @@
 # Compute grades
 
+## Abstract
+
 Add a text file like:
 ```txt
 [SUBJECT_1] [COEFFICIENT_1] [GRADE_1]
@@ -10,7 +12,8 @@ Add a text file like:
 
 Or just modify `example.txt`.
 
-How to:
+## How to
+
 ```bash
 # compile
 01_compute_grades % cmake -S . -B build
