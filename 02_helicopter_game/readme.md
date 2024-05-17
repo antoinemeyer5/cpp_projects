@@ -13,7 +13,7 @@ To generate obstacle and terrain random functions and some algorithms were used.
 
 ```bash
 # compile
-02_helicopter_game % git submodule update --init --recursive
+# 02_helicopter_game % git submodule update --init --recursive
 02_helicopter_game % mkdir build && cd build
 build % source ../build.sh
 

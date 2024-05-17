@@ -1,3 +1,0 @@
-[submodule "02_helicopter_game/wxWidgets"]
-	path = 02_helicopter_game/wxWidgets
-	url = https://github.com/wxWidgets/wxWidgets.git
