@@ -12,6 +12,7 @@ class Board : public wxPanel
 
     protected:
         void OnPaint(wxPaintEvent& event);
+        void OnKeyDown(wxKeyEvent& event);
 
     private:
         void DrawTriangle(wxPaintDC &dc, int x, int y, int size);
