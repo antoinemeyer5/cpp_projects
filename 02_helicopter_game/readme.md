@@ -24,3 +24,9 @@ build % ./build_src/exec
 # tests
 # todo
 ```
+
+## Diagram
+
+`main` has a `Frame`.
+`Frame` has a `wxStatusBar` and a `Board`.
+`Board` has a `Helicopter`.
