@@ -3,8 +3,8 @@
 ## Abstract
 
 The goal of the game is to drive the helicopter ahead without colliding with any objects.
-The user should operate the game using keys, and holding the helicopter’s critical advances while releasing it brings it down.
-The player will be able to tilt their helicopter up and down to avoid dangers and enemies.
+The user should operate the game using keys, and holding the helicopter’s critical advances.
+The player will be able to tilt their helicopter left and right to avoid dangers and enemies.
 The player will fly a helicopter over a scrolling landscape.
 In this project, the player has the option to shoot enemies in order to advance through the levels.
 To generate obstacle and terrain random functions and some algorithms were used.
@@ -13,8 +13,7 @@ To generate obstacle and terrain random functions and some algorithms were used.
 
 ```bash
 # compile
-02_helicopter_game % git submodule init
-02_helicopter_game % git submodule update
+02_helicopter_game % git clone --recurse-submodules https://github.com/wxWidgets/wxWidgets.git
 02_helicopter_game % mkdir build && cd build
 build % source ../build.sh
 

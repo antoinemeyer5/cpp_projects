@@ -7,4 +7,4 @@ Learn how to fetch `GoogleTest`, write tests, read a file.
 
 ## 02 - Helicopter game
 
-Use `Shell script`, `wxWidgets` and `Git Tools Submodules`.
+Use `Shell script` and `wxWidgets`.
