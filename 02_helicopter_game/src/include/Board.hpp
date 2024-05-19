@@ -13,11 +13,13 @@ class Board : public wxPanel
     protected:
         void OnPaint(wxPaintEvent& event);
         void OnKeyDown(wxKeyEvent& event);
+        void OnTimer(wxCommandEvent& event);
 
     private:
         void DrawTriangle(wxPaintDC &dc, int x, int y, int size);
 
         Helicopter helicopter;
+        wxTimer *timer;
         wxStatusBar *m_stsbar;
 };
 
