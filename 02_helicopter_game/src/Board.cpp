@@ -67,8 +67,16 @@ void Board::OnTimer(wxCommandEvent& event)
 {
     // Update helicopter's missiles
     for(Missile& m : helicopter.missiles){
-        m.SetCenterY(m.GetCenterY() - m.GetSpeed());
-        Refresh();
+        // Need to remove the missile
+        if(m.GetCenterY() < 100){
+            m = helicopter.missiles.back();
+            helicopter.missiles.pop_back();
+        }
+        // Need to update the missile
+        else {
+            m.SetCenterY(m.GetCenterY() - m.GetSpeed());
+            Refresh();
+        }
     }
 }
 
