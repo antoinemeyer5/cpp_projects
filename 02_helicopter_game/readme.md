@@ -2,12 +2,7 @@
 
 ## Abstract
 
-The goal of the game is to drive the helicopter ahead without colliding with any objects.
-The user should operate the game using keys, and holding the helicopter’s critical advances.
-The player will be able to tilt their helicopter left and right to avoid dangers and enemies.
-The player will fly a helicopter over a scrolling landscape.
-In this project, the player has the option to shoot enemies in order to advance through the levels.
-To generate obstacle and terrain random functions and some algorithms were used.
+The goal of the game is to drive the helicopter and kill enemies.
 
 ## How to
 
