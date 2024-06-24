@@ -78,6 +78,10 @@ void Board::OnTimer(wxCommandEvent& event)
             Refresh();
         }
     }
+
+    // Update status bar with the number of missile currently fired
+    wxString stringnumber = wxString::Format(wxT("%d"), (int)helicopter.missiles.size());
+    m_stsbar->SetStatusText(stringnumber);
 }
 
 void Board::DrawTriangle(wxPaintDC& dc, int center_x, int center_y, int size)
