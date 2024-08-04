@@ -12,20 +12,35 @@ The goal of the game is to drive the helicopter and kill enemies.
 02_helicopter_game % mkdir build && cd build
 build % source ../build.sh
 
-# compile only the source
-02_helicopter_game % cd build/build_src
-build_src % clang++ -std=c++17 `../build_wx/wx-config --cxxflags` ../../src/*.cpp -o exec `../build_wx/wx-config --libs`
-
 # execute
-02_helicopter_game % cd build
 build % ./build_src/exec
 
 # tests
 # todo
+
+# optional: compile only the source
+02_helicopter_game % cd build/build_src
+build_src % clang++ -std=c++17 `../build_wx/wx-config --cxxflags` ../../src/*.cpp -o exec `../build_wx/wx-config --libs`
+
 ```
 
 ## Diagram
 
-`main` has a `Frame`.
-`Frame` has a `wxStatusBar` and a `Board`.
-`Board` has a `Helicopter`.
+```mermaid
+graph LR
+    MA[main] -->|has a| F[Frame]
+
+    F --> W[wxStatusBar]
+    F --> B[Board]
+
+    B --> H[Helicopter]
+
+    H --> MI[Missiles]
+```
+
+## Todo
+
+- Better actualization code
+- Better compilation method
+- Add tests
+- Add enemies
